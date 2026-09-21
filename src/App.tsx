@@ -22,7 +22,6 @@ export default function App() {
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
   const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
 
-  // Mouse follower glow coordinates for desktop
   const [mousePos, setMousePos] = useState<{ x: number; y: number }>({ x: -1000, y: -1000 });
   const [isTouchDevice, setIsTouchDevice] = useState(false);
 
@@ -78,7 +77,7 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen selection:bg-[#8B5CF6]/30 selection:text-white overflow-x-hidden">
-      {/* Subtle mouse glow layer (disabled on touch) */}
+
       {!isTouchDevice && (
         <div
           className="mouse-glow-spot opacity-60 dark:opacity-75 transition-opacity duration-300"
@@ -89,7 +88,6 @@ export default function App() {
         />
       )}
 
-      {/* Floating Pill Navbar */}
       <Navbar
         theme={theme}
         toggleTheme={toggleTheme}
@@ -104,7 +102,7 @@ export default function App() {
         <Projects onSelectProject={(project) => setSelectedProject(project)} />
         <Experience />
         <Profiles />
-        <Contact onOpenResumeModal={() => setIsResumeModalOpen(true)} />
+        {/* <Contact onOpenResumeModal={() => setIsResumeModalOpen(true)} /> */}
       </main>
 
       {/* Interactive Project Modal */}

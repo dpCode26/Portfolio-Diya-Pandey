@@ -19,7 +19,7 @@ export const About: React.FC = () => {
       aria-label="About Diya Pandey"
       className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
     >
-      {/* Background Soft Glow Blob */}
+
       <div
         className="absolute top-1/3 left-1/4 w-80 h-80 rounded-full pointer-events-none -z-10"
         style={{
@@ -30,7 +30,6 @@ export const About: React.FC = () => {
       />
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-        {/* Left Column: Organic blob-shaped photo frame */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -39,7 +38,6 @@ export const About: React.FC = () => {
           className="lg:col-span-5 flex justify-center items-center"
         >
           <div className="relative w-72 sm:w-88 md:w-96 aspect-square">
-            {/* Ambient Radial Halo */}
             <div
               className="absolute inset-0 rounded-full -z-10"
               style={{
@@ -90,12 +88,10 @@ export const About: React.FC = () => {
             <span className="text-[#C4A5FF]">Working Products</span>
           </h2>
 
-          {/* Bio text */}
           <p className="text-base sm:text-lg text-[var(--text-muted)] leading-relaxed mb-6">
             {personalInfo.bio}
           </p>
 
-          {/* Education Mini-Card */}
           <div className="w-full glass-panel glass-panel-hover p-4 sm:p-5 rounded-2xl mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border border-[var(--card-border)]">
             <div className="flex items-start sm:items-center gap-3.5">
               <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-[#8B5CF6]/15 border border-[#8B5CF6]/30 text-[#C4A5FF] shrink-0">
@@ -118,7 +114,6 @@ export const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Three Stat Cards (Animated Counters) */}
           <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
             {statsData.map((stat, idx) => (
               <div
@@ -161,7 +156,7 @@ export const About: React.FC = () => {
           </div>
 
           {/* Let's Talk Pill Button */}
-          <a
+          {/* <a
             href="#contact"
             onClick={handleScrollToContact}
             id="about-btn-lets-talk"
@@ -169,7 +164,7 @@ export const About: React.FC = () => {
           >
             <span>Let's Talk</span>
             <ArrowRight className="w-4 h-4" />
-          </a>
+          </a> */}
         </motion.div>
       </div>
     </section>

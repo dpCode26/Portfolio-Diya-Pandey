@@ -65,7 +65,7 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, activeSectio
           className="group flex items-center gap-1.5 focus:outline-none focus:ring-2 focus:ring-[#8B5CF6] rounded-full px-2 py-1"
         >
           <span className="font-heading font-extrabold text-xl tracking-tight bg-gradient-to-r from-[#8B5CF6] via-[#C4A5FF] to-[#22D3EE] bg-clip-text text-transparent group-hover:opacity-90 transition-opacity">
-            Diya.
+            Diya
           </span>
           <Sparkles className="w-3.5 h-3.5 text-[#C4A5FF] animate-pulse" />
         </a>
@@ -101,7 +101,7 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, activeSectio
 
         {/* Right Actions: Contact & Theme Toggle & Mobile Hamburger */}
         <div className="flex items-center gap-2">
-          {/* Circular Contact Icon */}
+          
           <a
             href="#contact"
             id="nav-contact-button"
@@ -112,8 +112,7 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, activeSectio
             <Mail className="w-4 h-4" />
           </a>
 
-          {/* Theme Toggle Button */}
-          <button
+          {/* <button
             id="nav-theme-toggle-button"
             onClick={toggleTheme}
             aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
@@ -124,9 +123,8 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, activeSectio
             ) : (
               <Moon className="w-4 h-4 text-purple-700" />
             )}
-          </button>
+          </button> */}
 
-          {/* Mobile Menu Hamburger */}
           <button
             id="nav-mobile-menu-toggle"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

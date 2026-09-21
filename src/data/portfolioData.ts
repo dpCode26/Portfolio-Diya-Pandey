@@ -5,16 +5,16 @@ export const personalInfo = {
   title: "Full-Stack Developer & SDE Aspirant",
   college: "Kalinga Institute of Industrial Technology (KIIT), Bhubaneswar, Odisha",
   degree: "B.Tech in Computer Science & Engineering",
-  graduationYear: "2027",
+  graduationYear: "2028",
   cgpa: 9.5,
   cgpaSemesters: "through 4th semester",
   email: "diyawork05@gmail.com",
   location: "Bhubaneswar, Odisha, India",
-  statusBadge: "Open to SDE internships",
+  statusBadge: "Open to internships",
   heroSubtitlePhrases: [
     "Full-Stack Developer",
-    "SDE Aspirant",
     "DSA Problem Solver",
+    "SDE Aspirant",
     "AI/ML Enthusiast"
   ],
   bio: "I'm Diya, a 3rd-year B.Tech student at KIIT, Bhubaneswar. I'm preparing for SDE internships and jobs, building full-stack applications, and learning AI/ML along the way. I care about clean architecture, real deployments, and turning ideas into products people can actually use.",
@@ -31,10 +31,10 @@ export const personalInfo = {
   ],
   socials: {
     github: "https://github.com/dpCode26",
-    linkedin: "https://linkedin.com/in/diya-pandey",
-    leetcode: "https://leetcode.com/u/dpCode26",
-    codechef: "https://www.codechef.com/users/dpcode26",
-    codeforces: "https://codeforces.com/profile/dpCode26"
+    linkedin: "https://www.linkedin.com/in/diya-26d/",
+    leetcode: "https://leetcode.com/u/DiyaP26/",
+    codechef: "https://www.codechef.com/users/diya_p26",
+    codeforces: "https://codeforces.com/profile/codeforme_26"
   }
 };
 
@@ -47,7 +47,7 @@ export const statsData: StatItem[] = [
   },
   {
     label: "Live Projects",
-    value: 3,
+    value: 5,
     suffix: "+",
     description: "Production deployed web apps"
   },
@@ -60,7 +60,6 @@ export const statsData: StatItem[] = [
 ];
 
 export const skillsData: SkillItem[] = [
-  // Languages
   { name: "Java", category: "Languages", proficiency: "Advanced", percentage: 92, iconName: "Coffee" },
   { name: "C", category: "Languages", proficiency: "Proficient", percentage: 85, iconName: "Cpu" },
   { name: "Python", category: "Languages", proficiency: "Intermediate", percentage: 80, iconName: "Binary" },
@@ -114,31 +113,12 @@ export const projectsData: ProjectItem[] = [
     stack: ["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs", "JWT", "Alpha Vantage", "Gemini API"],
     githubUrl: "https://github.com/dpCode26/Rupix",
     liveUrl: "https://rupix-frontend.vercel.app/",
-    image: "/images/rupix-preview.jpg",
-    featured: true
-  },
-  {
-    id: "wanderstay",
-    number: "02",
-    title: "WanderStay",
-    subtitle: "Property Marketplace",
-    date: "Dec 2025",
-    description: "Full-stack property rental marketplace with comprehensive CRUD operations for listings, customer reviews, dynamic pricing, and booking reservations.",
-    keyFeatures: [
-      "Rigorous Mongoose data schemas with strict server-side validation and sanitization",
-      "Session-based auth flow with role-based authorization for property owners versus guests",
-      "Interactive location discovery powered by Mapbox GL and geocoded coordinates",
-      "Seamless multi-photo uploads and responsive transformations using Cloudinary"
-    ],
-    stack: ["Node.js", "Express.js", "MongoDB", "EJS", "REST APIs", "Mapbox", "Cloudinary", "Bootstrap"],
-    githubUrl: "https://github.com/dpCode26/WanderStay",
-    liveUrl: "https://wanderstay-43vr.onrender.com/listings",
-    image: "/images/wanderstay-preview.jpg",
+    image: "/images/rupix.png",
     featured: true
   },
   {
     id: "maatricare",
-    number: "03",
+    number: "02",
     title: "MaatriCare",
     subtitle: "AI Maternal Care Platform",
     date: "June 2026",
@@ -152,9 +132,79 @@ export const projectsData: ProjectItem[] = [
     stack: ["Next.js", "MongoDB", "REST APIs", "Gemini API", "Socket.io", "Tailwind CSS"],
     githubUrl: "https://github.com/dpCode26/MaatriCare",
     liveUrl: "https://maatricare-esry.onrender.com/",
-    image: "/images/maatricare-preview.jpg",
+    image: "/images/image.png",
     featured: true
-  }
+  },
+  {
+    id: "wanderstay",
+    number: "03",
+    title: "WanderStay",
+    subtitle: "Property Marketplace",
+    date: "Dec 2025",
+    description: "Full-stack property rental marketplace with comprehensive CRUD operations for listings, customer reviews, dynamic pricing, and booking reservations.",
+    keyFeatures: [
+      "Rigorous Mongoose data schemas with strict server-side validation and sanitization",
+      "Session-based auth flow with role-based authorization for property owners versus guests",
+      "Interactive location discovery powered by Mapbox GL and geocoded coordinates",
+      "Seamless multi-photo uploads and responsive transformations using Cloudinary"
+    ],
+    stack: ["Node.js", "Express.js", "MongoDB", "EJS", "REST APIs", "Mapbox", "Cloudinary", "Bootstrap"],
+    githubUrl: "https://github.com/dpCode26/WanderStay",
+    liveUrl: "https://wanderstay-43vr.onrender.com/listings",
+    image: "/images/wanderstay.jpg",
+    featured: true
+  },
+  {
+    id: "Music-School",
+    number: "04",
+    title: "Music School",
+    subtitle: "Appealing website for a music school",
+    date: " Feb 2026",
+    description: "A front-end project with NEXT.js and Typescript using Aceternity UI to boost frontend skills and design an appealing website for a music school.",
+    keyFeatures: [
+      "Clean modular Express backend with MongoDB aggregation pipelines for trade execution"
+    ],
+    stack: ["Next.js", "TypeScript", "CSS"],
+    githubUrl: "https://github.com/dpCode26/Music-School",
+    liveUrl: "https://music-school-md9v.vercel.app/",
+    image: "images/music.png",
+    featured: true
+  },
+  {
+    id: "weather-app",
+    number: "05",
+    title: "Weather App",
+    subtitle: "A responsive weather App",
+    date: "May 2026",
+    description: "Completely built with JavaScript",
+    keyFeatures: [
+      "Real-time market quotes and candlestick charts powered by Alpha Vantage integration",
+      "Gemini API integration for natural-language portfolio analysis and automated P&L insights",
+      "Robust JWT-based authentication and route authorization securing user portfolios and transactions",
+      "Clean modular Express backend with MongoDB aggregation pipelines for trade execution"
+    ],
+    stack: ["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs", "JWT", "Alpha Vantage", "Gemini API"],
+    githubUrl: "https://github.com/dpCode26/Weather-App",
+    liveUrl: "https://weather-app-mocha-five-88.vercel.app/",
+    image: "/images/weather.png",
+    featured: true
+  },
+  {
+    id: "quora posts",
+    number: "06",
+    title: "Quora Posts",
+    subtitle: "Post sharing website",
+    date: "May 2026",
+    description: "A minimalist post-sharing website where users can write, view, and manage their posts easily",
+    keyFeatures: [
+      "Built with react and express"
+    ],
+    stack: ["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs", "JWT", "Alpha Vantage", "Gemini API"],
+    githubUrl: "https://github.com/dpCode26/Quora-Posts",
+    liveUrl: "https://quora-posts-two.vercel.app/",
+    image: "/images/quora.png",
+    featured: true
+  },
 ];
 
 export const experienceData: ExperienceItem[] = [
@@ -175,9 +225,9 @@ export const experienceData: ExperienceItem[] = [
     id: "ksac",
     role: "Core Team Member",
     organization: "KSAC Web Development Team",
-    period: "Oct 2023 – Present",
+    period: "Sept 2026 – Present",
     location: "KIIT Student Activity Centre",
-    type: "University Core Team",
+    type: "KSAC Core Team",
     bullets: [
       "Contribute to official KIIT university cultural, technical, and sports fest portals handling high-concurrency traffic during peak fest days.",
       "Spearheaded database schema design in MongoDB for ticketing, participant verifications, and real-time announcement tickers.",
@@ -223,17 +273,17 @@ export const profilesAndAchievements: CodingProfileItem[] = [
     iconName: "GitBranch",
     type: "profile"
   },
-  {
-    platform: "AWS Academy Cloud Foundations",
-    handle: "AWS Training & Certification",
-    stats: "Cloud Architecture, Compute, Storage, Networking & Security",
-    ratingBadge: "Verified",
-    url: "https://aws.amazon.com/training/",
-    iconName: "Award",
-    type: "certification",
-    issuer: "Amazon Web Services",
-    date: "Dec 2024"
-  },
+  // {
+  //   platform: "AWS Academy Cloud Foundations",
+  //   handle: "AWS Training & Certification",
+  //   stats: "Cloud Architecture, Compute, Storage, Networking & Security",
+  //   ratingBadge: "Verified",
+  //   url: "https://aws.amazon.com/training/",
+  //   iconName: "Award",
+  //   type: "certification",
+  //   issuer: "Amazon Web Services",
+  //   date: "Dec 2024"
+  // },
   {
     platform: "Postman API Fundamentals Student Expert",
     handle: "Postman Academy",

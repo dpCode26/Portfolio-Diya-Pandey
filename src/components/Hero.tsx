@@ -24,7 +24,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
       aria-label="Introduction & Hero"
       className="relative min-h-[90vh] flex items-center justify-center pt-28 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden"
     >
-      {/* Large blurred violet glow blob behind the hero (top-left) */}
       <div
         className="absolute -top-24 -left-24 w-96 sm:w-[540px] h-96 sm:h-[540px] rounded-full pointer-events-none -z-10"
         style={{
@@ -34,7 +33,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
         }}
       />
 
-      {/* Secondary accent glow */}
       <div
         className="absolute top-1/2 right-0 w-80 sm:w-[480px] h-80 sm:h-[480px] rounded-full pointer-events-none -z-10"
         style={{
@@ -45,16 +43,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
       />
 
       <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-        {/* Left Column: Information, Socials, CTA */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           className="lg:col-span-7 flex flex-col items-start"
         >
-          {/* Row of small circular social icons above heading */}
           <div className="flex items-center gap-2.5 mb-6 flex-wrap">
-            {/* GitHub */}
             <a
               href={personalInfo.socials.github}
               target="_blank"
@@ -68,7 +63,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
               </svg>
             </a>
 
-            {/* LinkedIn */}
             <a
               href={personalInfo.socials.linkedin}
               target="_blank"
@@ -82,7 +76,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
               </svg>
             </a>
 
-            {/* LeetCode */}
             <a
               href={personalInfo.socials.leetcode}
               target="_blank"
@@ -95,8 +88,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
               <Code2 className="w-4 h-4" />
             </a>
 
-            {/* CodeChef */}
-            <a
+            {/* <a
               href={personalInfo.socials.codechef}
               target="_blank"
               rel="noopener noreferrer"
@@ -108,7 +100,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
               <Terminal className="w-4 h-4" />
             </a>
 
-            {/* Codeforces */}
             <a
               href={personalInfo.socials.codeforces}
               target="_blank"
@@ -119,7 +110,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
               title="Codeforces"
             >
               <span className="font-mono font-bold text-xs">CF</span>
-            </a>
+            </a> */}
 
             {/* Status Pill Badge */}
             <div className="ml-2 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#8B5CF6]/10 border border-[#8B5CF6]/30 text-xs font-medium text-[#C4A5FF]">
@@ -142,18 +133,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
             </span>
           </h1>
 
-          {/* Monospace Subtitle with Typing/Rotating effect */}
           <div className="flex items-center gap-2 mb-6 text-lg sm:text-2xl font-mono-code min-h-[36px]">
             <span className="text-[var(--text-muted)]">›</span>
             <TypewriterSubtitle phrases={personalInfo.heroSubtitlePhrases} />
           </div>
 
-          {/* Short Intro */}
           <p className="text-base sm:text-lg text-[var(--text-muted)] leading-relaxed max-w-2xl mb-8">
-            3rd-year B.Tech student at KIIT building full-stack products, sharpening DSA, and exploring AI/ML. Looking for top SDE internships and roles.
+            3rd-year B.Tech student at KIIT building full-stack products, sharpening DSA, and exploring AI/ML. Looking for SDE internships and roles.
           </p>
 
-          {/* CTA Buttons */}
           <div className="flex flex-wrap items-center gap-4">
             <button
               onClick={onOpenResumeModal}
@@ -175,7 +163,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
             </a>
           </div>
 
-          {/* Quick Metrics Chip Row */}
+          
           <div className="mt-10 pt-6 border-t border-[var(--card-border)] w-full flex items-center gap-6 sm:gap-10 text-xs sm:text-sm text-[var(--text-muted)]">
             <div>
               <span className="font-heading font-bold text-lg sm:text-xl text-white block">9.5 CGPA</span>
@@ -183,25 +171,24 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
             </div>
             <div className="h-8 w-px bg-[var(--card-border)]" />
             <div>
-              <span className="font-heading font-bold text-lg sm:text-xl text-white block">3+ Live Apps</span>
+              <span className="font-heading font-bold text-lg sm:text-xl text-white block">5+ Live Apps</span>
               <span>Full-Stack Web</span>
             </div>
             <div className="h-8 w-px bg-[var(--card-border)]" />
-            <div>
+            {/* <div>
               <span className="font-heading font-bold text-lg sm:text-xl text-[#22D3EE] block">SDE 2026/27</span>
               <span>Internship Ready</span>
-            </div>
+            </div> */}
           </div>
         </motion.div>
 
-        {/* Right Column: Hero Portrait with Floating Tech Badges */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="lg:col-span-5 flex justify-center items-center relative"
         >
-          {/* Glowing Radial Halo behind photo */}
+        
           <div
             className="absolute w-72 sm:w-96 h-72 sm:h-96 rounded-full -z-10 animate-pulse pointer-events-none"
             style={{
@@ -210,7 +197,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
             }}
           />
 
-          {/* Floating Container */}
           <motion.div
             animate={{ y: [0, -12, 0] }}
             transition={{ duration: 5, repeat: Infinity, repeatType: 'reverse', ease: 'easeInOut' }}
